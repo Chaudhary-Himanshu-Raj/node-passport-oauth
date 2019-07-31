@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 // Create a schema.
 const userSchema = new Schema({
     username: String,
-    google_id: String
+    google_id: String,
+    thumbnail: String
 });
 
 //Create an instance using schema

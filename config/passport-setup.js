@@ -33,7 +33,8 @@ passport.use(
                 // if not, create user in our db
                 new User({
                     google_id: profile.id,
-                    username: profile.displayName
+                    username: profile.displayName,
+                    thumbnail: profile._json.picture
                 }).save().then((newUser) => {
                     console.log('created new user: ', newUser);
                     // do something

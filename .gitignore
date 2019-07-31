@@ -1,2 +1,5 @@
 # Ignore keys files
 /config/keys.js
+
+# Ignore node_modules
+node_modules
